@@ -1,0 +1,37 @@
+:root {
+    --very-dark-grey-blue: hsl(217, 19%, 35%);
+    --desaturated-blue: hsl(214, 17%, 51%);
+    --gray-blue: hsl(212, 23%, 69%);
+    --light-gray-blue: hsl(210, 46%, 95%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    font-size: .8125rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
