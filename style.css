@@ -21,8 +21,74 @@ img {
     max-width: 100%;
 }
 
+.drawers {
+    width: 70%;
+    margin-right: 1em;
+}
+
+.avatar {
+    width: 5rem;
+}
+
+
+h1 {
+    padding: 1em 0;
+    width: 90%;
+}
+
+p {
+    padding: 1em 0;
+    width: 90%;
+}
+
+
+.container {
+    width: min(80%, 1000px);
+    margin: 20vh auto 2em;
+}
+
 body {
     font-family: 'Manrope', sans-serif;
+    height: 100%;
+    background: var(--light-gray-blue);
+
+}
+
+main {
+    max-width: 1000px;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+section {
+    flex-shrink: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    /* width: 100%; */
+}
+
+.profile {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px red solid; */
+    width: 100%;
+}
+
+.share {
+    width: 3rem;
+}
+
+.profile-share {
+    background: var(--desaturated-blue);
+    display: none;
 }
 
 /* footer */
