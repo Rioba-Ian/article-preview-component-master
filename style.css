@@ -98,10 +98,27 @@ section {
     border: 1px rgb(255, 255, 255) solid;
 }
 
+.profile {
+    position: relative;
+    margin-top: 0.25em;
+}
+
 .profile-share {
     background: var(--desaturated-blue);
     display: none;
 }
+
+
+
+.profile-share-open *+* {
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.profile h3 {
+    text-transform: uppercase;
+}
+
 
 .profile-share-btn {
     cursor: pointer;
@@ -161,13 +178,23 @@ section {
         margin-left: 0.5em;
     }
 
-    .profile h3 {
-        text-transform: uppercase;
-    }
 
     #share-icon {
         position: relative;
     }
 
 
+}
+
+
+@media (min-width:800px) {
+
+    .profile-share-open {
+        position: absolute;
+        display: flex;
+        width: 14rem;
+        padding: 1em;
+        bottom: 80%;
+        left: 55%;
+    }
 }
