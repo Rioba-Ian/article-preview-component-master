@@ -1,7 +1,12 @@
-const shareBtn = document.querySelector(".profile-share-btn")
+const shareBtn = document.querySelector("#share-icon")
 
-shareBtn.addEventListener("click", function (e) {
-    this.classList.add("clicked")
-})
+const popupMenu = document.querySelector(".profile-share")
+
+function handleClick(e) {
+    popupMenu.classList.toggle("profile-share-open")
+    shareBtn.style.setProperty("z-index", "99")
+}
+
+shareBtn.addEventListener("click", handleClick)
 
 

@@ -90,8 +90,12 @@ section {
     align-items: center;
 }
 
-.share {
-    width: 1rem;
+#share-icon {
+    width: 3rem;
+    padding: .5em;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px rgb(255, 255, 255) solid;
 }
 
 .profile-share {
@@ -134,4 +138,36 @@ section {
         width: 100%;
         margin: 1em 0;
     }
+
+    .profile {
+        position: relative;
+        margin-top: 1em;
+    }
+
+
+    .profile-share-open {
+        position: absolute;
+        top: 5;
+        left: 4px;
+        display: flex;
+        align-items: center;
+        padding: 1em;
+        width: 120%;
+        transform: scale(119%);
+        height: 8rem;
+    }
+
+    .profile-share-open *+* {
+        margin-left: 0.5em;
+    }
+
+    .profile h3 {
+        text-transform: uppercase;
+    }
+
+    #share-icon {
+        position: relative;
+    }
+
+
 }
