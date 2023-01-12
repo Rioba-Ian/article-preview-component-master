@@ -66,9 +66,7 @@ section {
     justify-content: space-around;
 }
 
-.section-content {
-    justify-self: stretch;
-}
+.section-content {}
 
 
 
@@ -110,4 +108,26 @@ section {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:800px) {
+    .container {
+        margin: 10vh auto 2em;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 2em;
+    }
+
+    .section-content h1,
+    p {
+        width: 100%;
+        margin: 1em 0;
+    }
 }
